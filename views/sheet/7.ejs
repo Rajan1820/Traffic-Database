@@ -1,0 +1,51 @@
+<%- include ("../partials/header") %>
+<link rel="stylesheet" href="../../public/css/">
+<section class="compose">
+    <form action="/7" method="post">
+        <div class="label">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year">
+        </div>
+        <div class="label">
+            <label for="spot">Which Location ?</label>
+            <select name="spot" id="">
+                <option value="" disabled selected>East or West ?</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select>
+        </div>
+        <div class="label">
+            <label for="junction">Junction Type</label>
+            <select name="junction" id="junction">
+              <option value="" disabled selected>Choose</option>
+              <option value="T">T Junciton</option>
+              <option value="Y">Y Junnction</option>
+              <option value="4arm">Four Arm Junction</option>
+              <option value="SJ">Staggered Juntion</option>
+              <option value="RAJ">Round about Junction</option>
+            </select>
+          </div>
+<div class="label">
+    <label for="type">Type of Accident/Injury</label>
+    <select name="type" id="type">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">Fatal Accident</option>
+        <option value="2">Greviously Injured</option>
+        <option value="3">Minor Injury</option>
+        <option value="4">No Injury</option>
+    </select>
+</div>
+<div class="label">
+    <label for="people">Number of people involved</label>
+    <select name="people" id="people">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">Killed</option>
+        <option value="2">Grevious Injury</option>
+        <option value="3">Minor Injury</option>
+    </select>
+</div>
+<button type="submit">+</button>
+</form>
+</section>
+<%- include("../partials/footer_1") %>
+

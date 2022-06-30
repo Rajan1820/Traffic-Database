@@ -1,0 +1,58 @@
+<%- include ("../partials/header") %>
+<link rel="stylesheet" href="../../public/css/">
+<section class="compose">
+    <form action="/1" method="post">
+        <div class="label">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year">
+        </div>
+        <div class="label">
+            <label for="spot">Which Location ?</label>
+            <select name="spot" id="">
+                <option value="" disabled selected>East or West ?</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select>
+        </div>
+<div class="label">
+    <label for="month">Month of Accident</label>
+    <select name="month" id="month">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">Novmber</option>
+        <option value="12">December</option>
+    </select>
+</div>
+<div class="label">
+    <label for="type">Type of Accident/Injury</label>
+    <select name="type" id="type">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">Fatal Accident</option>
+        <option value="2">Greviously Injured</option>
+        <option value="3">Minor Injury</option>
+        <option value="4">No Injury</option>
+    </select>
+</div>
+<div class="label">
+    <label for="people">Number of people involved</label>
+    <select name="people" id="people">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">Killed</option>
+        <option value="2">Grevious Injury</option>
+        <option value="3">Minor Injury</option>
+    </select>
+</div>
+<button type="submit">+</button>
+</form>
+</section>
+<%- include("../partials/footer_1") %>
+

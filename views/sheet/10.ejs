@@ -1,0 +1,57 @@
+<%- include ("../partials/header") %>
+<link rel="stylesheet" href="../../public/css/">
+<section class="compose">
+    <form action="/10" method="post">
+        <div class="label">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year">
+        </div>
+        <div class="label">
+            <label for="spot">Which Location ?</label>
+            <select name="spot" id="">
+                <option value="" disabled selected>East or West ?</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select>
+        </div>
+        <div class="label">
+            <label for="vehicle">Type of Impacting vehicles</label>
+            <select name="vehicle" id="vehicle">
+              <option value="" disabled selected>Type of Vehicle</option>
+              <option value="ped">Pedestrain Only</option>
+              <option value="cycle">Bicycles</option>
+              <option value="tw">Two Wheelers</option>
+              <option value="ar">Auto Rickshaws</option>
+              <option value="c">Cars, Taxis, Vans & LMV</option>
+              <option value="t">Trucks/Lorries</option>
+              <option value="b">Buses</option>
+              <option value="omv">Other Motor Vehicles</option>
+              <option value="er">E-Rickshaw</option>
+              <option value="nmv">Non-motorized vehicle</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+<div class="label">
+    <label for="type">Type of Accident/Injury</label>
+    <select name="type" id="type">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">Fatal Accident</option>
+        <option value="2">Greviously Injured</option>
+        <option value="3">Minor Injury</option>
+        <option value="4">No Injury</option>
+    </select>
+</div>
+<div class="label">
+    <label for="people">Number of people involved</label>
+    <select name="people" id="people">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">Killed</option>
+        <option value="2">Grevious Injury</option>
+        <option value="3">Minor Injury</option>
+    </select>
+</div>
+<button type="submit">+</button>
+</form>
+</section>
+<%- include("../partials/footer_1") %>
+

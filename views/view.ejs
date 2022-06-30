@@ -1,0 +1,48 @@
+<%- include("partials/header") %>
+<section class="compose view">
+    <form action="/view" method="post">
+      <div class="label">
+        <label for="year">Choose a year :</label>
+        <input type="number" name="choose_year" id="year">
+      </div>
+      <div class="label">
+        <label for="spot1">Choose a spot :</label>
+        <select name="spot1" id="spot1">
+          <option value="" disabled selected>Choose the spot to show data </option>
+          <option value="east">East Jodhpur</option>
+          <option value="west">West Jodhpur</option>
+        </select>
+      </div>
+      <div class="label">
+        <label for="sort">Show data based on : </label>
+      <select name="sort1" id="sort1">
+        <option value="none" disabled selected>Sort the data based on ?</option>
+        <option value="year">Year</option>
+        <option value="area_time">Area and Time of the day</option>
+        <option value="weather">Weather Conditions</option>
+        <option value="roads">Classification of Roads</option>
+        <option value="environment">Environment of Accident Spot</option>
+        <option value="features">Road features</option>
+        <option value="jnc_type">Junction Type</option>
+        <option value="traffic_control">Traffic control</option>
+        <option value="ped_infra">Pedestrian Infrastructure</option>
+        <option value="vehicles">Type of Impacting Vehicles</option>
+        <option value="age_vehicles">Age of Impacting vehicles</option>
+        <option value="load">Load of Involved Vehicles</option>
+        <option value="type_collision">Type of Collision</option>
+        <option value="traffic_violations">Type of Traffic Violations</option>
+        <option value="safety">Use/No-use of safety Device by Victim</option>
+        <option value="license">License of Driver</option>
+        <option value="type_user">Type of Road user</option>
+        <option value="type_adv">Type of Victims , Age and Sex</option>
+        <option value="highway">Based on type of Highways</option>
+        <option value="highway_people" >Victims on different highways</option>
+        <option value="highway_traffic" >Traffic violations on different highways</option>
+        <option value=""></option>
+      </select>
+      </div>
+      <button type="submit" class="v-btn">View</button>
+    </form>
+  </section>
+
+<%- include("partials/footer_1") %>

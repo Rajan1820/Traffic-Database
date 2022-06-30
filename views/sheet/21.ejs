@@ -1,0 +1,52 @@
+<%- include ("../partials/header") %>
+<link rel="stylesheet" href="../../public/css/">
+<section class="compose">
+    <form action="/21" method="post">
+        <div class="label">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year">
+        </div>
+        <div class="label">
+            <label for="spot">Which Location ?</label>
+            <select name="spot" id="">
+                <option value="" disabled selected>East or West ?</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select>
+        </div>
+        <div class="label">
+            <label for="NH">Type of NH</label>
+            <select name="NH" id="NH">
+                <option value=""disabled selected>Type of NH Authority</option>
+                <option value="NHAI">National Highway under NHAI</option>
+                <option value="PWD">National Highway under PWD</option>
+                <option value="others">National Highway under Other Departments</option>
+            </select>
+        </div>
+        
+
+        <div class="label">
+            <label for="violation">Type of Traffic Violation</label>
+            <select name="violation" id="violation">
+              <option value="" disabled selected>Traffic Violation</option>
+              <option value="OS">Over-Speeding</option>
+              <option value="DD">Drunken Driving/Use of Drugs</option>
+              <option value="WS">Driving on Wrong Side</option>
+              <option value="RL">Jumping Red Light</option>
+              <option value="MP">Use of Mobile Phone</option>
+              <option value="others">Others</option>
+            </select>
+          </div>
+        
+<div class="label">
+    <label for="people">Type of Calamity</label>
+    <select name="people" id="people">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">Accident</option>
+        <option value="2">Killed</option>
+    </select>
+</div>
+<button type="submit">+</button>
+</form>
+</section>
+

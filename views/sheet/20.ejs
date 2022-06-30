@@ -1,0 +1,54 @@
+<%- include ("../partials/header") %>
+<link rel="stylesheet" href="../../public/css/">
+<section class="compose">
+    <form action="/20" method="post">
+        <div class="label">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year">
+        </div>
+        <div class="label">
+            <label for="spot">Which Location ?</label>
+            <select name="spot" id="">
+                <option value="" disabled selected>East or West ?</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select>
+        </div>
+        <div class="label">
+            <label for="NH">Type of NH</label>
+            <select name="NH" id="NH">
+                <option value=""disabled selected>Type of NH Authority</option>
+                <option value="NHAI">National Highway under NHAI</option>
+                <option value="PWD">National Highway under PWD</option>
+                <option value="others">National Highway under Other Departments</option>
+            </select>
+        </div>
+        
+
+<div class="label">
+    <label for="v">Type of Road user</label>
+    <select name="v" id="driverUser">
+      <option value="" disabled selected>Driver in Vehicle Types</option>
+      <option value="1">Pedestrian</option>
+      <option value="2">Bicycles</option>
+      <option value="3">Two Wheelers</option>
+      <option value="4">Auto Rickshaws</option>
+      <option value="5">Cars, Taxis, Vans & LMV</option>
+      <option value="6">Trucks/Lorries</option>
+      <option value="7">Buses</option>
+      <option value="8">Others</option>   
+    </select>
+  </div>
+        
+<div class="label">
+    <label for="people">Type of Calamity</label>
+    <select name="people" id="people">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">Accident</option>
+        <option value="2">Killed</option>
+    </select>
+</div>
+<button type="submit">+</button>
+</form>
+</section>
+

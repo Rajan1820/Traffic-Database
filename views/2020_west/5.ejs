@@ -1,0 +1,437 @@
+<%- include("../partials/header") %>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link
+  type="text/css"
+  rel="stylesheet"
+  href="resources/sheet.css"
+/>
+<link rel="stylesheet" href="../../public/css/styles.css" />
+<style type="text/css">
+  .ritz .waffle a {
+    color: inherit;
+  }
+  .ritz .waffle .s11 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Arial";
+    font-size: 10pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s1 {
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: "docs-calibri", Arial;
+    font-size: 10pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s4 {
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Arial";
+    font-size: 10pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s0 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 14pt;
+    vertical-align: bottom;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s8 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s2 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s5 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s9 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: top;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s6 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: top;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s3 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: top;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s7 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Arial";
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s10 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+</style>
+<div class="table">
+<div class="ritz grid-container" dir="ltr">
+  <table class="waffle" cellspacing="0" cellpadding="0">
+    <thead>
+      <tr>
+        <th class="row-header freezebar-origin-ltr"></th>
+        <th
+          id="125471711C0"
+          style="width: 176px"
+          class="column-headers-background"
+        >
+          A
+        </th>
+        <th
+          id="125471711C1"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          B
+        </th>
+        <th
+          id="125471711C2"
+          style="width: 168px"
+          class="column-headers-background"
+        >
+          C
+        </th>
+        <th
+          id="125471711C3"
+          style="width: 185px"
+          class="column-headers-background"
+        >
+          D
+        </th>
+        <th
+          id="125471711C4"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          E
+        </th>
+        <th
+          id="125471711C5"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          F
+        </th>
+        <th
+          id="125471711C6"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          G
+        </th>
+        <th
+          id="125471711C7"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          H
+        </th>
+        <th
+          id="125471711C8"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          I
+        </th>
+        <th
+          id="125471711C9"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          J
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="height: 20px">
+        <th
+          id="125471711R0"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">1</div>
+        </th>
+        <td class="s0" colspan="9">
+          5. Accidents Classified According to Road Environment
+        </td>
+        <td class="s1"></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="125471711R1"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">2</div>
+        </th>
+        <td class="s2" rowspan="3">Accident Spot</td>
+        <td class="s3" colspan="5">Number of Accidents</td>
+        <td class="s3" colspan="3">Number of Persons</td>
+        <td class="s4" rowspan="2"></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="125471711R2"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">3</div>
+        </th>
+        <td class="s3" rowspan="2">Fatal</td>
+        <td class="s3" rowspan="2">Grevious Injury (need hospitalisation)</td>
+        <td class="s3" dir="ltr" rowspan="2">
+          Minor Injury (not needing hospitalisation)
+        </td>
+        <td class="s3" rowspan="2">Non Injury</td>
+        <td class="s3" rowspan="2">Total</td>
+        <td class="s3" rowspan="2">Killed</td>
+        <td class="s3" colspan="2">Injured</td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="125471711R3"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">4</div>
+        </th>
+        <td class="s3">Greviously Injured</td>
+        <td class="s3">Minor Injury</td>
+        <td class="s1"></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="125471711R4"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">5</div>
+        </th>
+        <td class="s5">1.  Residential Area</td>
+        <td class="s6">41</td>
+        <td class="s6">7</td>
+        <td class="s6">57</td>
+        <td class="s6">9</td>
+        <td class="s7">114</td>
+        <td class="s8">42</td>
+        <td class="s8">13</td>
+        <td class="s9">62</td>
+        <td class="s1"></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="125471711R5"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">6</div>
+        </th>
+        <td class="s5">2.  Institutional Area *</td>
+        <td class="s6"></td>
+        <td class="s6">1</td>
+        <td class="s6">5</td>
+        <td class="s6"></td>
+        <td class="s7">6</td>
+        <td class="s8"></td>
+        <td class="s8">1</td>
+        <td class="s9">5</td>
+        <td class="s1"></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="125471711R6"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">7</div>
+        </th>
+        <td class="s5">3.  Market/ Commercial area #</td>
+        <td class="s6">19</td>
+        <td class="s6">4</td>
+        <td class="s6">26</td>
+        <td class="s6">3</td>
+        <td class="s7">52</td>
+        <td class="s8">21</td>
+        <td class="s8">5</td>
+        <td class="s9">27</td>
+        <td class="s1"></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="125471711R7"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">8</div>
+        </th>
+        <td class="s5">4. Open Area</td>
+        <td class="s6">61</td>
+        <td class="s6">3</td>
+        <td class="s6">22</td>
+        <td class="s6">5</td>
+        <td class="s7">91</td>
+        <td class="s8">68</td>
+        <td class="s8">10</td>
+        <td class="s9">60</td>
+        <td class="s1"></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="125471711R8"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">9</div>
+        </th>
+        <td class="s5">5.  Others (Specify)</td>
+        <td class="s6">10</td>
+        <td class="s6">2</td>
+        <td class="s6">15</td>
+        <td class="s6">2</td>
+        <td class="s7">29</td>
+        <td class="s8">11</td>
+        <td class="s8">4</td>
+        <td class="s9">20</td>
+        <td class="s1"></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="125471711R9"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">10</div>
+        </th>
+        <td class="s10">TOTAL$</td>
+        <td class="s11">131</td>
+        <td class="s11">17</td>
+        <td class="s11">125</td>
+        <td class="s11">19</td>
+        <td class="s11">292</td>
+        <td class="s11">142</td>
+        <td class="s11">33</td>
+        <td class="s11">174</td>
+        <td class="s1"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

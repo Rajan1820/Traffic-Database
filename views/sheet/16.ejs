@@ -1,0 +1,41 @@
+<%- include ("../partials/header") %>
+<link rel="stylesheet" href="../../public/css/">
+<section class="compose">
+    <form action="/16" method="post">
+        <div class="label">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year">
+        </div>
+        <div class="label">
+            <label for="spot">Which Location ?</label>
+            <select name="spot" id="">
+                <option value="" disabled selected>East or West ?</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select>
+        </div>
+        <div class="label">
+            <label for="license">License type of Driver</label>
+            <select name="license" id="license">
+              <option value="" disabled selected>License of Drivers</option>
+              <option value="PL">Valid Permanent License</option>
+              <option value="LL">Learner's License</option>
+              <option value="WL">Without License</option>
+              <option value="notknown">Not Known</option>
+            </select>
+          </div>
+          <div class="label">
+            <label for="type">Type of Accident/Injury</label>
+            <select name="type" id="type">
+                <option value="" disabled selected>Choose</option>
+                <option value="1">Fatal Accident</option>
+                <option value="2">Greviously Injured</option>
+                <option value="3">Minor Injury</option>
+                <option value="4">No Injury</option>
+            </select>
+        </div>
+<button type="submit">+</button>
+</form>
+</section>
+<%- include("../partials/footer_1") %>
+

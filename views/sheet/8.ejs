@@ -1,0 +1,51 @@
+<%- include ("../partials/header") %>
+<link rel="stylesheet" href="../../public/css/">
+<section class="compose">
+    <form action="/8" method="post">
+        <div class="label">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year">
+        </div>
+        <div class="label">
+            <label for="spot">Which Location ?</label>
+            <select name="spot" id="">
+                <option value="" disabled selected>East or West ?</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select>
+        </div>
+        <div class="label">
+            <label for="traffic">Traffic Control </label>
+            <select name="traffic" id="traffic">
+              <option value="" disabled selected>Control type at Junction</option>
+              <option value="TL">Traffic Light Signal</option>
+              <option value="PC">Police Controlled</option>
+              <option value="SS">Stop Sign</option>
+              <option value="FS">Flashing Signal</option>
+              <option value="uncontrolled">Uncontrolled</option>
+            </select>
+          </div>
+<div class="label">
+    <label for="type">Type of Accident/Injury</label>
+    <select name="type" id="type">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">Fatal Accident</option>
+        <option value="2">Greviously Injured</option>
+        <option value="3">Minor Injury</option>
+        <option value="4">No Injury</option>
+    </select>
+</div>
+<div class="label">
+    <label for="people">Number of people involved</label>
+    <select name="people" id="people">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">Killed</option>
+        <option value="2">Grevious Injury</option>
+        <option value="3">Minor Injury</option>
+    </select>
+</div>
+<button type="submit">+</button>
+</form>
+</section>
+<%- include("../partials/footer_1") %>
+

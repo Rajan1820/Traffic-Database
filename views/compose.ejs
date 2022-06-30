@@ -1,0 +1,48 @@
+<%- include("partials/header") %>
+
+<section class="compose">
+  <form action="/compose" method="post">
+    <div class="label">
+      <label for="year">Year</label>
+      <input type="number" name="year" id="year" />
+    </div>
+    <div class="label">
+      <label for="spot">Which location ?</label>
+      <select name="spot" id="">
+        <option value="" disabled selected>East or West ?</option>
+        <option value="east">East</option>
+        <option value="west">West</option>
+      </select>
+    </div>
+      <div class="label">
+        <label for="sheet">Classificy data by:</label>
+        <select name="sheet" id="sheet">
+          <option value="" disabled selected>Parameter</option>
+          <option value="1">Month</option>
+          <option value="2">Time</option>
+          <option value="3">Weather</option>
+          <option value="4">Road type</option>
+          <option value="5">Environment of Accident spot</option>
+          <option value="6">Road feature</option>
+          <option value="7">Junction type</option>
+          <option value="8">Traffic control</option>
+          <option value="9">Pedestrian Infrastructure</option>
+          <option value="10">Type of vehicles</option>
+          <option value="11">Age of vehicles</option>
+          <option value="12">Load of vehicles</option>
+          <option value="13">Type of Collision</option>
+          <option value="14">Traffic violation</option>
+          <option value="15">Use of safety device</option>
+          <option value="16">License of driver</option>
+          <option value="17">Type of road user</option>
+          <option value="18">Type of victims</option>
+          <option value="19">Type of Highway</option>
+          <option value="20">Victims on Highways</option>
+          <option value="21">Traffic violation on Highway</option>
+        </select>
+      </div>  
+    <button type="submit">+</button>
+  </form>
+</section>
+
+<%- include("partials/footer_1") %>

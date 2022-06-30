@@ -1,0 +1,46 @@
+<%- include ("../partials/header") %>
+<link rel="stylesheet" href="../../public/css/">
+<section class="compose">
+    <form action="/15" method="post">
+        <div class="label">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year">
+        </div>
+        <div class="label">
+            <label for="spot">Which Location ?</label>
+            <select name="spot" id="">
+                <option value="" disabled selected>East or West ?</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select>
+        </div>
+        <div class="label">
+            <label for="DSD">Lack of Safety: Driver</label>
+            <select name="DSD" id="SD">
+              <option value="" disabled selected>Lack of safety by Driver</option>
+              <option value="dh">Driver : not wearing Helmet</option>
+              <option value="ds">Driver : not wearing Seat-belt</option>
+            </select>
+          </div>
+          <div class="label">
+            <label for="PSD">Lack of Safety: Passenger</label>
+            <select name="PSD" id="SD">
+              <option value="" disabled selected>Lack of safety by Passenger</option>
+              <option value="ph">Passenger : not wearing Helmet</option>
+              <option value="ps">Passenger : not wearing Seat-belt</option>
+            </select>
+          </div>
+<div class="label">
+    <label for="people">Number of people involved</label>
+    <select name="people" id="people">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">Killed</option>
+        <option value="2">Grevious Injury</option>
+        <option value="3">Minor Injury</option>
+    </select>
+</div>
+<button type="submit">+</button>
+</form>
+</section>
+<%- include("../partials/footer_1") %>
+

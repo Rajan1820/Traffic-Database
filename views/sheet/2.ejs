@@ -1,0 +1,64 @@
+<%- include ("../partials/header") %>
+<link rel="stylesheet" href="../../public/css/">
+<section class="compose">
+    <form action="/2" method="post">
+        <div class="label">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year">
+        </div>
+        <div class="label">
+            <label for="spot">Which Location ?</label>
+            <select name="spot" id="">
+                <option value="" disabled selected>East or West ?</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select>
+        </div>
+        <div class="label">
+            <label for="time">Time of Accident</label>
+            <select name="time" id="">
+              ]<option value="" disabled selected>Select the time Period</option>
+              <option value="69">6am to 9am</option>
+              <option value="912">9am to 12pm</option>
+              <option value="1215">12pm to 3pm</option>
+              <option value="1518">3pm to 6pm</option>
+              <option value="1821">6pm to 9pm</option>
+              <option value="2124">9pm to 12am</option>
+              <option value="0003">12am to 3am</option>
+              <option value="36">3am to 6am</option>
+              <option value="unk">Unknown Time</option>
+            </select>
+          
+          </div>
+          <div class="label">
+            <label for="area">Which Area ?</label>
+            <select name="area" id="">
+                <option value="" disabled selected>Rural or Urban ?</option>
+                <option value="1">Rural Area</option>
+                <option value="2">Urban Area</option>
+            </select>
+          </div>
+<div class="label">
+    <label for="type">Type of Accident/Injury</label>
+    <select name="type" id="type">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">Fatal Accident</option>
+        <option value="2">Greviously Injured</option>
+        <option value="3">Minor Injury</option>
+        <option value="4">No Injury</option>
+    </select>
+</div>
+<div class="label">
+    <label for="people">Number of people involved</label>
+    <select name="people" id="people">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">Killed</option>
+        <option value="2">Grevious Injury</option>
+        <option value="3">Minor Injury</option>
+    </select>
+</div>
+<button type="submit">+</button>
+</form>
+</section>
+<%- include("../partials/footer_1") %>
+

@@ -1,0 +1,73 @@
+<%- include ("../partials/header") %>
+<link rel="stylesheet" href="../../public/css/">
+<section class="compose">
+    <form action="/17" method="post">
+        <div class="label">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year">
+        </div>
+        <div class="label">
+            <label for="spot">Which Location ?</label>
+            <select name="spot" id="">
+                <option value="" disabled selected>East or West ?</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select>
+        </div>
+        <div class="label">
+            <label for="du">User : Driver</label>
+            <select name="du" id="driverUser">
+              <option value="" disabled selected>Driver in Vehicle Types</option>
+              <option value="1">Pedestrian</option>
+              <option value="2">Bicycles</option>
+              <option value="3">Two Wheelers</option>
+              <option value="4">Auto Rickshaws</option>
+              <option value="5">Cars, Taxis, Vans & LMV</option>
+              <option value="6">Trucks/Lorries</option>
+              <option value="7">Buses</option>
+              <option value="8">Other Motor Vehicles</option>
+            </select>
+          </div>
+          <div class="label">
+            <label for="pu">User : Passenger</label>
+            <select name="pu" id="passengerUser">
+              <option value="" disabled selected>Passenger in Vehicle Types</option>
+              <option value="1">Bicycles</option>
+              <option value="2">Two Wheelers</option>
+              <option value="3">Auto Rickshaws</option>
+              <option value="4">Cars, Taxis, Vans & LMV</option>
+              <option value="5">Trucks/Lorries</option>
+              <option value="6">Buses</option>
+              <option value="7">Other Motor Vehicles</option>
+            </select>
+          </div>
+          <div class="label">
+            <label for="dg">Driver's Gender</label>
+            <select name="dg" id="driverGender">
+              <option value="" disabled selected>Driver's Gender</option>
+              <option value="m">Male</option>
+              <option value="f">Female</option>
+            </select>
+          </div>
+          <div class="label">
+            <label for="pg">Passenger's Gender</label>
+            <select name="pg" id="passengerGender">
+              <option value="" disabled selected>Passenger's Gender</option>
+              <option value="m">Male</option>
+              <option value="f">Female</option>
+            </select>
+          </div>    
+<div class="label">
+    <label for="people">Number of people involved</label>
+    <select name="people" id="people">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">Killed</option>
+        <option value="2">Grevious Injury</option>
+        <option value="3">Minor Injury</option>
+    </select>
+</div>
+<button type="submit">+</button>
+</form>
+</section>
+<%- include("../partials/footer_1") %>
+

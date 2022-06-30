@@ -1,0 +1,642 @@
+<%- include ("../partials/header") %>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link
+  type="text/css"
+  rel="stylesheet"
+  href="resources/sheet.css"
+/>
+<style type="text/css">
+  .ritz .waffle a {
+    color: inherit;
+  }
+  .ritz .waffle .s1 {
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 14pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+  .ritz .waffle .s6 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    vertical-align: top;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+  .ritz .waffle .s8 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+  .ritz .waffle .s14 {
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    vertical-align: top;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+  .ritz .waffle .s12 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 14pt;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+  .ritz .waffle .s10 {
+    border-left: none;
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+  .ritz .waffle .s11 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+  .ritz .waffle .s2 {
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+  .ritz .waffle .s4 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 13pt;
+    vertical-align: top;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+  .ritz .waffle .s0 {
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 14pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+  .ritz .waffle .s7 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+  .ritz .waffle .s9 {
+    border-right: none;
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+  .ritz .waffle .s5 {
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+  .ritz .waffle .s3 {
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    vertical-align: top;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+  .ritz .waffle .s13 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 14pt;
+    vertical-align: middle;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+</style>
+<link rel="stylesheet" href="../../public/css/styles.css">
+<div class="table">
+<div class="ritz grid-container" dir="ltr">
+  <table class="waffle" cellspacing="0" cellpadding="0">
+  
+    <tbody>
+      <tr style="height: 49px">
+        <th
+          id="1838754531R0"
+          style="height: 49px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s0" colspan="11">
+        </td>
+      </tr>
+      <tr style="height: 27px">
+        <th
+          id="1838754531R1"
+          style="height: 27px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s1" colspan="4" rowspan="2">
+          
+        </td>
+        <td class="s2" colspan="7"></td>
+      </tr>
+      <tr style="height: 1px">
+        <th
+          id="1838754531R2"
+          style="height: 1px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s3" colspan="7"></td>
+      </tr>
+      <tr style="height: 34px">
+        <th
+          id="1838754531R3"
+          style="height: 34px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s4" colspan="10">
+          1. Total number of Accidents Classified According to Month of the Year
+        </td>
+        <td class="s5"></td>
+      </tr>
+      <tr style="height: 42px">
+        <th
+          id="1838754531R4"
+          style="height: 42px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s6" rowspan="2">
+          <span
+            style="
+              font-size: 11pt;
+              font-family: Times New Roman;
+              font-weight: bold;
+              color: #000000;
+            "
+            >Month</span
+          >
+        </td>
+        <td class="s7" colspan="5">
+          <span
+            style="
+              font-size: 11pt;
+              font-family: Times New Roman;
+              font-weight: bold;
+              color: #000000;
+            "
+            >Number of Accidents</span
+          >
+        </td>
+        <td class="s7" colspan="4">
+          <span
+            style="
+              font-size: 11pt;
+              font-family: Times New Roman;
+              font-weight: bold;
+              color: #000000;
+            "
+            >Number of Persons<br />(based on type of Accidents)</span
+          >
+        </td>
+        <td class="s5"></td>
+      </tr>
+      <tr style="height: 63px">
+        <th
+          id="1838754531R5"
+          style="height: 63px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s8">Fatal</td>
+        <td class="s7">
+          <span
+            style="
+              font-size: 11pt;
+              font-family: Times New Roman;
+              font-weight: bold;
+              color: #000000;
+            "
+            >Grievous<br />Injury<br />(hospitalized)</span
+          >
+        </td>
+        <td class="s7">
+          <span
+            style="
+              font-size: 11pt;
+              font-family: Times New Roman;
+              font-weight: bold;
+              color: #000000;
+            "
+            >Minor Injury<br />(not hospitalized)</span
+          >
+        </td>
+        <td class="s7">
+          <span
+            style="
+              font-size: 11pt;
+              font-family: Times New Roman;
+              font-weight: bold;
+              color: #000000;
+            "
+            >No Injury</span
+          >
+        </td>
+        <td class="s8">Total</td>
+        <td class="s8">Killed</td>
+        <td class="s7">
+          <span
+            style="
+              font-size: 11pt;
+              font-family: Times New Roman;
+              font-weight: bold;
+              color: #000000;
+            "
+            >Grievous<br />Injury<br />(hospitalized)</span
+          >
+        </td>
+        <td class="s7">
+          <span
+            style="
+              font-size: 11pt;
+              font-family: Times New Roman;
+              font-weight: bold;
+              color: #000000;
+            "
+            >Minor Injury<br />(not hospitalized)</span
+          >
+        </td>
+        <td class="s8">Total</td>
+        <td class="s5"></td>
+      </tr>
+      <tr style="height: 31px">
+        <th
+          id="1838754531R6"
+          style="height: 31px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s11">1. January</td>
+        <td class="s12"><%= f_jan_acc%></td>
+        <td class="s12"><%= gi_jan_acc%></td>
+        <td class="s12"><%= mi_jan_acc%></td>
+        <td class="s12"><%= ni_jan_acc%></td>
+        <td class="s13"><%= tot_jan_acc%></td>
+        <td class="s12"><%= kil_jan_pep%></td>
+        <td class="s12"><%= gi_jan_pep%></td>
+        <td class="s12"><%= mi_jan_pep%></td>
+        <td class="s13"><%= tot_jan_pep%></td>
+        <td></td>
+      </tr>
+      <tr style="height: 31px">
+        <th
+          id="1838754531R7"
+          style="height: 31px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s11">2. February</td>
+        <td class="s12"><%= f_feb_acc%></td>
+        <td class="s12"><%= gi_feb_acc%></td>
+        <td class="s12"><%= mi_feb_acc%></td>
+        <td class="s12"><%= ni_feb_acc%></td>
+        <td class="s13"><%= tot_feb_acc%></td>
+        <td class="s12"><%= kil_feb_pep%></td>
+        <td class="s12"><%= gi_feb_pep%></td>
+        <td class="s12"><%= mi_feb_pep%></td>
+        <td class="s13"><%= tot_feb_pep%></td>
+        <td></td>
+      </tr>
+      <tr style="height: 31px">
+        <th
+          id="1838754531R8"
+          style="height: 31px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s11">3. March</td>
+        <td class="s12"><%= f_mar_acc%></td>
+        <td class="s12"><%= gi_mar_acc%></td>
+        <td class="s12"><%= mi_mar_acc%></td>
+        <td class="s12"><%= ni_mar_acc%></td>
+        <td class="s13"><%= tot_mar_acc%></td>
+        <td class="s12"><%= kil_mar_pep%></td>
+        <td class="s12"><%= gi_mar_pep%></td>
+        <td class="s12"><%= mi_mar_pep%></td>
+        <td class="s13"><%= tot_mar_pep%></td>
+        <td></td>
+      </tr>
+      <tr style="height: 31px">
+        <th
+          id="1838754531R9"
+          style="height: 31px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s11">4. April</td>
+        <td class="s12"><%= f_apr_acc%></td>
+        <td class="s12"><%= gi_apr_acc%></td>
+        <td class="s12"><%= mi_apr_acc%></td>
+        <td class="s12"><%= ni_apr_acc%></td>
+        <td class="s13"><%= tot_apr_acc%></td>
+        <td class="s12"><%= kil_apr_pep%></td>
+        <td class="s12"><%= gi_apr_pep%></td>
+        <td class="s12"><%= mi_apr_pep%></td>
+        <td class="s13"><%= tot_apr_pep%></td>
+        <td></td>
+      </tr>
+      <tr style="height: 31px">
+        <th
+          id="1838754531R10"
+          style="height: 31px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s11">5. May</td>
+        <td class="s12"><%= f_may_acc%></td>
+        <td class="s12"><%= gi_may_acc%></td>
+        <td class="s12"><%= mi_may_acc%></td>
+        <td class="s12"><%= ni_may_acc%></td>
+        <td class="s13"><%= tot_may_acc%></td>
+        <td class="s12"><%= kil_may_pep%></td>
+        <td class="s12"><%= gi_may_pep%></td>
+        <td class="s12"><%= mi_may_pep%></td>
+        <td class="s13"><%= tot_may_pep%></td>
+        <td></td>
+      </tr>
+      <tr style="height: 31px">
+        <th
+          id="1838754531R11"
+          style="height: 31px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s11">6. June</td>
+        <td class="s12"><%= f_jun_acc%></td>
+        <td class="s12"><%= gi_jun_acc%></td>
+        <td class="s12"><%= mi_jun_acc%></td>
+        <td class="s12"><%= ni_jun_acc%></td>
+        <td class="s13"><%= tot_jun_acc%></td>
+        <td class="s12"><%= kil_jun_pep%></td>
+        <td class="s12"><%= gi_jun_pep%></td>
+        <td class="s12"><%= mi_jun_pep%></td>
+        <td class="s13"><%= tot_jun_pep%></td>
+        <td></td>
+      </tr>
+      <tr style="height: 31px">
+        <th
+          id="1838754531R12"
+          style="height: 31px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s11">7. July</td>
+        <td class="s12"><%= f_jul_acc%></td>
+        <td class="s12"><%= gi_jul_acc%></td>
+        <td class="s12"><%= mi_jul_acc%></td>
+        <td class="s12"><%= ni_jul_acc%></td>
+        <td class="s13"><%= tot_jul_acc%></td>
+        <td class="s12"><%= kil_jul_pep%></td>
+        <td class="s12"><%= gi_jul_pep%></td>
+        <td class="s12"><%= mi_jul_pep%></td>
+        <td class="s13"><%= tot_jul_pep%></td>
+        <td></td>
+      </tr>
+      <tr style="height: 31px">
+        <th
+          id="1838754531R13"
+          style="height: 31px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s11">8. August</td>
+        <td class="s12"><%= f_aug_acc%></td>
+        <td class="s12"><%= gi_aug_acc%></td>
+        <td class="s12"><%= mi_aug_acc%></td>
+        <td class="s12"><%= ni_aug_acc%></td>
+        <td class="s13"><%= tot_aug_acc%></td>
+        <td class="s12"><%= kil_aug_pep%></td>
+        <td class="s12"><%= gi_aug_pep%></td>
+        <td class="s12"><%= mi_aug_pep%></td>
+        <td class="s13"><%= tot_aug_pep%></td>
+        <td></td>
+      </tr>
+      <tr style="height: 31px">
+        <th
+          id="1838754531R14"
+          style="height: 31px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s11">9. September</td>
+        <td class="s12"><%= f_sep_acc%></td>
+        <td class="s12"><%= gi_sep_acc%></td>
+        <td class="s12"><%= mi_sep_acc%></td>
+        <td class="s12"><%= ni_sep_acc%></td>
+        <td class="s13"><%= tot_sep_acc%></td>
+        <td class="s12"><%= kil_sep_pep%></td>
+        <td class="s12"><%= gi_sep_pep%></td>
+        <td class="s12"><%= mi_sep_pep%></td>
+        <td class="s13"><%= tot_sep_pep%></td>
+        <td></td>
+      </tr>
+      <tr style="height: 31px">
+        <th
+          id="1838754531R15"
+          style="height: 31px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s11">10. October</td>
+        <td class="s12"><%= f_oct_acc%></td>
+        <td class="s12"><%= gi_oct_acc%></td>
+        <td class="s12"><%= mi_oct_acc%></td>
+        <td class="s12"><%= ni_oct_acc%></td>
+        <td class="s13"><%= tot_oct_acc%></td>
+        <td class="s12"><%= kil_oct_pep%></td>
+        <td class="s12"><%= gi_oct_pep%></td>
+        <td class="s12"><%= mi_oct_pep%></td>
+        <td class="s13"><%= tot_oct_pep%></td>
+        <td></td>
+      </tr>
+      <tr style="height: 31px">
+        <th
+          id="1838754531R16"
+          style="height: 31px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s11">11. November</td>
+        <td class="s12"><%= f_nov_acc%></td>
+        <td class="s12"><%= gi_nov_acc%></td>
+        <td class="s12"><%= mi_nov_acc%></td>
+        <td class="s12"><%= ni_nov_acc%></td>
+        <td class="s13"><%= tot_nov_acc%></td>
+        <td class="s12"><%= kil_nov_pep%></td>
+        <td class="s12"><%= gi_nov_pep%></td>
+        <td class="s12"><%= mi_nov_pep%></td>
+        <td class="s13"><%= tot_nov_pep%></td>
+        <td></td>
+      </tr>
+      <tr style="height: 31px">
+        <th
+          id="1838754531R17"
+          style="height: 31px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s11">12. December</td>
+        <td class="s12"><%= f_dec_acc%></td>
+        <td class="s12"><%= gi_dec_acc%></td>
+        <td class="s12"><%= mi_dec_acc%></td>
+        <td class="s12"><%= ni_dec_acc%></td>
+        <td class="s13"><%= tot_dec_acc%></td>
+        <td class="s12"><%= kil_dec_pep%></td>
+        <td class="s12"><%= gi_dec_pep%></td>
+        <td class="s12"><%= mi_dec_pep%></td>
+        <td class="s13"><%= tot_dec_pep%></td>
+        <td></td>
+      </tr>
+      <tr style="height: 31px">
+        <th
+          id="1838754531R18"
+          style="height: 31px"
+          class="row-headers-background"
+        >
+        </th>
+        <td class="s13">Total</td>
+        <td class="s12"><%= f_tot_acc%></td>
+        <td class="s12"><%= gi_tot_acc%></td>
+        <td class="s12"><%= mi_tot_acc%></td>
+        <td class="s12"><%= ni_tot_acc%></td>
+        <td class="s13"><%= tot_tot_acc%></td>
+        <td class="s12"><%= kil_tot_pep%></td>
+        <td class="s12"><%= gi_tot_pep%></td>
+        <td class="s12"><%= mi_tot_pep%></td>
+        <td class="s13"><%= tot_tot_pep%></td>
+        <td></td>
+      </tr>
+      <tr style="height: 71px">
+        <th
+          id="1838754531R19"
+          style="height: 71px"
+          class="row-headers-background"
+        >
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

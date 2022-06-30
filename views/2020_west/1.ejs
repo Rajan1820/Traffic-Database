@@ -1,0 +1,539 @@
+<%- include("../partials/header") %>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link
+  type="text/css"
+  rel="stylesheet"
+  href="resources/sheet.css"
+/>
+<link rel="stylesheet" href="../../public/css/styles.css" />
+<style type="text/css">
+  .ritz .waffle a {
+    color: inherit;
+  }
+  .ritz .waffle .s0 {
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: "docs-calibri", Arial;
+    font-size: 10pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s6 {
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s1 {
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 16pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s2 {
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: "docs-calibri", Arial;
+    font-size: 10pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s10 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s13 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s8 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s11 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 14pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s4 {
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s5 {
+    border-left: none;
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s7 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    color: #ff0000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s12 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s9 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s3 {
+    border-right: none;
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+</style>
+<div class="table">
+<div class="ritz grid-container" dir="ltr">
+  <table class="waffle" cellspacing="0" cellpadding="0">
+    <thead>
+      <tr>
+        <th class="row-header freezebar-origin-ltr"></th>
+        <th id="0C0" style="width: 100px" class="column-headers-background">
+          A
+        </th>
+        <th id="0C1" style="width: 100px" class="column-headers-background">
+          B
+        </th>
+        <th id="0C2" style="width: 100px" class="column-headers-background">
+          C
+        </th>
+        <th id="0C3" style="width: 100px" class="column-headers-background">
+          D
+        </th>
+        <th id="0C4" style="width: 100px" class="column-headers-background">
+          E
+        </th>
+        <th id="0C5" style="width: 100px" class="column-headers-background">
+          F
+        </th>
+        <th id="0C6" style="width: 100px" class="column-headers-background">
+          G
+        </th>
+        <th id="0C7" style="width: 100px" class="column-headers-background">
+          H
+        </th>
+        <th id="0C8" style="width: 100px" class="column-headers-background">
+          I
+        </th>
+        <th id="0C9" style="width: 100px" class="column-headers-background">
+          J
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="height: 20px">
+        <th id="0R0" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">1</div>
+        </th>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R1" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">2</div>
+        </th>
+        <td class="s1" colspan="10">Road Accident Data 2020</td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R2" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">3</div>
+        </th>
+        <td class="s2"></td>
+        <td class="s2"></td>
+        <td class="s2"></td>
+        <td class="s2"></td>
+        <td class="s2"></td>
+        <td class="s2"></td>
+        <td class="s2"></td>
+        <td class="s2"></td>
+        <td class="s0"></td>
+        <td class="s0"></td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R3" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">4</div>
+        </th>
+        <td class="s3 softmerge">
+          <div class="softmerge-inner" style="width: 798px; left: -1px">
+            1. TOTAL NUMBER OF ROAD ACCIDENTS CLASSIFIED ACCORDING TO MONTH OF
+            THE YEAR
+          </div>
+        </td>
+        <td class="s4"></td>
+        <td class="s4"></td>
+        <td class="s4"></td>
+        <td class="s4"></td>
+        <td class="s4"></td>
+        <td class="s4"></td>
+        <td class="s5"></td>
+        <td class="s5"></td>
+        <td class="s6"></td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R4" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">5</div>
+        </th>
+        <td class="s7"></td>
+        <td class="s7"></td>
+        <td class="s7"></td>
+        <td class="s7"></td>
+        <td class="s7"></td>
+        <td class="s7"></td>
+        <td class="s7"></td>
+        <td class="s7"></td>
+        <td class="s7"></td>
+        <td class="s7"></td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R5" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">6</div>
+        </th>
+        <td class="s8" rowspan="2">Month</td>
+        <td class="s8" colspan="5">Type of Accidents</td>
+        <td class="s9" colspan="4">Number of persons involved</td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R6" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">7</div>
+        </th>
+        <td class="s10">Fatal</td>
+        <td class="s9">GI</td>
+        <td class="s9">MI</td>
+        <td class="s9">NI</td>
+        <td class="s9">Total</td>
+        <td class="s9">Killed</td>
+        <td class="s8">Grevious Injured</td>
+        <td class="s8">Minor Injured</td>
+        <td class="s9">Total</td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R7" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">8</div>
+        </th>
+        <td class="s10">1. January</td>
+        <td class="s11">10</td>
+        <td class="s11">2</td>
+        <td class="s11">16</td>
+        <td class="s11">3</td>
+        <td class="s12">31</td>
+        <td class="s11">11</td>
+        <td class="s11">2</td>
+        <td class="s11">27</td>
+        <td class="s12">40</td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R8" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">9</div>
+        </th>
+        <td class="s10">2. February</td>
+        <td class="s11">9</td>
+        <td class="s11">6</td>
+        <td class="s11">18</td>
+        <td class="s11">1</td>
+        <td class="s12">34</td>
+        <td class="s11">11</td>
+        <td class="s11">9</td>
+        <td class="s11">20</td>
+        <td class="s12">40</td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R9" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">10</div>
+        </th>
+        <td class="s10">3. March</td>
+        <td class="s11">7</td>
+        <td class="s11"></td>
+        <td class="s11">8</td>
+        <td class="s11">1</td>
+        <td class="s12">16</td>
+        <td class="s11">7</td>
+        <td class="s11"></td>
+        <td class="s11">11</td>
+        <td class="s12">18</td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R10" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">11</div>
+        </th>
+        <td class="s10">4. April</td>
+        <td class="s11">1</td>
+        <td class="s11"></td>
+        <td class="s11">4</td>
+        <td class="s11">1</td>
+        <td class="s12">6</td>
+        <td class="s11">1</td>
+        <td class="s11"></td>
+        <td class="s11">4</td>
+        <td class="s12">5</td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R11" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">12</div>
+        </th>
+        <td class="s10">5. May</td>
+        <td class="s11">2</td>
+        <td class="s11">1</td>
+        <td class="s11">4</td>
+        <td class="s11">1</td>
+        <td class="s12">8</td>
+        <td class="s11">2</td>
+        <td class="s11">1</td>
+        <td class="s11">5</td>
+        <td class="s12">8</td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R12" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">13</div>
+        </th>
+        <td class="s10">6. June</td>
+        <td class="s11">15</td>
+        <td class="s11"></td>
+        <td class="s11">3</td>
+        <td class="s11">2</td>
+        <td class="s12">20</td>
+        <td class="s11">16</td>
+        <td class="s11"></td>
+        <td class="s11">4</td>
+        <td class="s12">20</td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R13" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">14</div>
+        </th>
+        <td class="s10">7. July</td>
+        <td class="s11">16</td>
+        <td class="s11">1</td>
+        <td class="s11">8</td>
+        <td class="s11">2</td>
+        <td class="s12">27</td>
+        <td class="s11">20</td>
+        <td class="s11">4</td>
+        <td class="s11">11</td>
+        <td class="s12">35</td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R14" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">15</div>
+        </th>
+        <td class="s10">8. August</td>
+        <td class="s11">12</td>
+        <td class="s11">2</td>
+        <td class="s11">14</td>
+        <td class="s11">2</td>
+        <td class="s12">30</td>
+        <td class="s11">12</td>
+        <td class="s11">4</td>
+        <td class="s11">20</td>
+        <td class="s12">36</td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R15" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">16</div>
+        </th>
+        <td class="s10 softmerge">
+          <div class="softmerge-inner" style="width: 97px; left: -1px">
+            9. September
+          </div>
+        </td>
+        <td class="s11">10</td>
+        <td class="s11"></td>
+        <td class="s11">8</td>
+        <td class="s11">2</td>
+        <td class="s12">20</td>
+        <td class="s11">10</td>
+        <td class="s11">1</td>
+        <td class="s11">18</td>
+        <td class="s12">29</td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R16" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">17</div>
+        </th>
+        <td class="s10">10. October</td>
+        <td class="s11">16</td>
+        <td class="s11">3</td>
+        <td class="s11">13</td>
+        <td class="s11">1</td>
+        <td class="s12">33</td>
+        <td class="s11">16</td>
+        <td class="s11">5</td>
+        <td class="s11">23</td>
+        <td class="s12">44</td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R17" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">18</div>
+        </th>
+        <td class="s10 softmerge">
+          <div class="softmerge-inner" style="width: 97px; left: -1px">
+            11. November
+          </div>
+        </td>
+        <td class="s11">13</td>
+        <td class="s11">1</td>
+        <td class="s11">17</td>
+        <td class="s11">3</td>
+        <td class="s12">34</td>
+        <td class="s11">15</td>
+        <td class="s11">4</td>
+        <td class="s11">19</td>
+        <td class="s12">38</td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R18" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">19</div>
+        </th>
+        <td class="s10 softmerge">
+          <div class="softmerge-inner" style="width: 97px; left: -1px">
+            12. December
+          </div>
+        </td>
+        <td class="s11">20</td>
+        <td class="s11">1</td>
+        <td class="s11">12</td>
+        <td class="s11"></td>
+        <td class="s12">33</td>
+        <td class="s11">21</td>
+        <td class="s11">3</td>
+        <td class="s11">12</td>
+        <td class="s12">36</td>
+      </tr>
+      <tr style="height: 20px">
+        <th id="0R19" style="height: 20px" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 20px">20</div>
+        </th>
+        <td class="s13">TOTAL</td>
+        <td class="s12">131</td>
+        <td class="s12">17</td>
+        <td class="s12">125</td>
+        <td class="s12">19</td>
+        <td class="s12">292</td>
+        <td class="s12">142</td>
+        <td class="s12">33</td>
+        <td class="s12">174</td>
+        <td class="s12">349</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

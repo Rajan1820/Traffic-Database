@@ -1,0 +1,1386 @@
+<%- include("../partials/header") %>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link
+  type="text/css"
+  rel="stylesheet"
+  href="resources/sheet.css"
+/>
+<link rel="stylesheet" href="../../public/css/styles.css" />
+<style type="text/css">
+  .ritz .waffle a {
+    color: inherit;
+  }
+  .ritz .waffle .s4 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "docs-calibri", Arial;
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s15 {
+    border-left: none;
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "docs-calibri", Arial;
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s2 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "docs-calibri", Arial;
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s14 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: "docs-calibri", Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s10 {
+    border-left: none;
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    vertical-align: top;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s1 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s5 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s11 {
+    border-left: none;
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-family: "docs-calibri", Arial;
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s9 {
+    border-right: none;
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    vertical-align: top;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s13 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "docs-calibri", Arial;
+    font-size: 14pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s8 {
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s12 {
+    border-left: none;
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: "docs-calibri", Arial;
+    font-size: 11pt;
+    vertical-align: top;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s3 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s0 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 14pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s7 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 11pt;
+    vertical-align: top;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s6 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-family: "docs-calibri", Arial;
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+</style>
+<div class="table">
+<div class="ritz grid-container" dir="ltr">
+  <table class="waffle" cellspacing="0" cellpadding="0">
+    <thead>
+      <tr>
+        <th class="row-header freezebar-origin-ltr"></th>
+        <th
+          id="1010233704C0"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          A
+        </th>
+        <th
+          id="1010233704C1"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          B
+        </th>
+        <th
+          id="1010233704C2"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          C
+        </th>
+        <th
+          id="1010233704C3"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          D
+        </th>
+        <th
+          id="1010233704C4"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          E
+        </th>
+        <th
+          id="1010233704C5"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          F
+        </th>
+        <th
+          id="1010233704C6"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          G
+        </th>
+        <th
+          id="1010233704C7"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          H
+        </th>
+        <th
+          id="1010233704C8"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          I
+        </th>
+        <th
+          id="1010233704C9"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          J
+        </th>
+        <th
+          id="1010233704C10"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          K
+        </th>
+        <th
+          id="1010233704C11"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          L
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R0"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">1</div>
+        </th>
+        <td class="s0" colspan="11">
+          18. Accidents Classified According to Type of Victims, Age and Sex
+        </td>
+        <td></td>
+      </tr>
+      <tr style="height: 41px">
+        <th
+          id="1010233704R1"
+          style="height: 41px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 41px">2</div>
+        </th>
+        <td class="s1" colspan="2" rowspan="3">Victims</td>
+        <td class="s2" colspan="5">Number of Accidents</td>
+        <td class="s2" colspan="4">Number of Persons</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R2"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">3</div>
+        </th>
+        <td class="s2" rowspan="2">Fatal</td>
+        <td class="s3" dir="ltr" rowspan="2">Injury</td>
+        <td class="s4" rowspan="2">Minor Injury</td>
+        <td class="s4" rowspan="2">Non Injury</td>
+        <td class="s2" rowspan="2">Total</td>
+        <td class="s2" colspan="2">Killed</td>
+        <td class="s2" colspan="2">Injured</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R3"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">4</div>
+        </th>
+        <td class="s2">Male</td>
+        <td class="s2">Female</td>
+        <td class="s2">Male</td>
+        <td class="s2">Female</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R4"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">5</div>
+        </th>
+        <td class="s5" colspan="2">(A) Drivers - Total</td>
+        <td class="s6">35</td>
+        <td class="s6">10</td>
+        <td class="s6">34</td>
+        <td class="s6">8</td>
+        <td class="s2">87</td>
+        <td class="s6">40</td>
+        <td class="s6">4</td>
+        <td class="s6">41</td>
+        <td class="s6">10</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R5"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">6</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">Less than 18 years</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s2">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R6"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">7</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">18 – 25 years</td>
+        <td class="s6">9</td>
+        <td class="s6">4</td>
+        <td class="s6">13</td>
+        <td class="s6">1</td>
+        <td class="s2">27</td>
+        <td class="s6">15</td>
+        <td class="s6">2</td>
+        <td class="s6">12</td>
+        <td class="s6">4</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R7"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">8</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">25 - 35 years</td>
+        <td class="s6">10</td>
+        <td class="s6">2</td>
+        <td class="s6">11</td>
+        <td class="s6">3</td>
+        <td class="s2">26</td>
+        <td class="s6">10</td>
+        <td class="s6">1</td>
+        <td class="s6">14</td>
+        <td class="s6">2</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R8"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">9</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">35 - 45 years</td>
+        <td class="s6">14</td>
+        <td class="s6">3</td>
+        <td class="s6">6</td>
+        <td class="s6">4</td>
+        <td class="s2">27</td>
+        <td class="s6">13</td>
+        <td class="s6">1</td>
+        <td class="s6">7</td>
+        <td class="s6">3</td>
+        <td class="s8" rowspan="2"></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R9"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">10</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">45 - 60 years</td>
+        <td class="s6">2</td>
+        <td class="s6">1</td>
+        <td class="s6">2</td>
+        <td class="s6">0</td>
+        <td class="s2">5</td>
+        <td class="s6">2</td>
+        <td class="s6">0</td>
+        <td class="s6">6</td>
+        <td class="s6">1</td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R10"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">11</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">60 years and above</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">1</td>
+        <td class="s6">0</td>
+        <td class="s2">1</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R11"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">12</div>
+        </th>
+        <td class="s9 softmerge">
+          <div class="softmerge-inner" style="width: 198px; left: -1px">
+            Age not known
+          </div>
+        </td>
+        <td class="s10"></td>
+        <td class="s11">0</td>
+        <td class="s6">0</td>
+        <td class="s6">1</td>
+        <td class="s6">0</td>
+        <td class="s2">1</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R12"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">13</div>
+        </th>
+        <td class="s5" colspan="2">(B) Passengers Total</td>
+        <td class="s2">45</td>
+        <td class="s2">18</td>
+        <td class="s2">63</td>
+        <td class="s2">12</td>
+        <td class="s2">138</td>
+        <td class="s2">23</td>
+        <td class="s2">22</td>
+        <td class="s2">61</td>
+        <td class="s2">71</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R13"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">14</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">Less than 18 years</td>
+        <td class="s6">3</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">2</td>
+        <td class="s2">5</td>
+        <td class="s6">1</td>
+        <td class="s6">2</td>
+        <td class="s6">3</td>
+        <td class="s6">8</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R14"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">15</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">18 – 25 years</td>
+        <td class="s6">7</td>
+        <td class="s6">0</td>
+        <td class="s6">7</td>
+        <td class="s6">1</td>
+        <td class="s2">15</td>
+        <td class="s6">4</td>
+        <td class="s6">1</td>
+        <td class="s6">6</td>
+        <td class="s6">6</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R15"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">16</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">25 - 35 years</td>
+        <td class="s6">2</td>
+        <td class="s6">5</td>
+        <td class="s6">9</td>
+        <td class="s6">0</td>
+        <td class="s2">16</td>
+        <td class="s6">0</td>
+        <td class="s6">3</td>
+        <td class="s6">10</td>
+        <td class="s6">5</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R16"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">17</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">35 - 45 years</td>
+        <td class="s6">6</td>
+        <td class="s6">4</td>
+        <td class="s6">17</td>
+        <td class="s6">1</td>
+        <td class="s2">28</td>
+        <td class="s6">4</td>
+        <td class="s6">2</td>
+        <td class="s6">5</td>
+        <td class="s6">9</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R17"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">18</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">45 - 60 years</td>
+        <td class="s6">2</td>
+        <td class="s6">3</td>
+        <td class="s6">5</td>
+        <td class="s6">1</td>
+        <td class="s2">11</td>
+        <td class="s6">2</td>
+        <td class="s6">1</td>
+        <td class="s6">7</td>
+        <td class="s6">11</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R18"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">19</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">60 years and above</td>
+        <td class="s6">1</td>
+        <td class="s6">0</td>
+        <td class="s6">4</td>
+        <td class="s6">0</td>
+        <td class="s2">5</td>
+        <td class="s6">1</td>
+        <td class="s6">1</td>
+        <td class="s6">1</td>
+        <td class="s6">3</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R19"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">20</div>
+        </th>
+        <td class="s9 softmerge">
+          <div class="softmerge-inner" style="width: 198px; left: -1px">
+            Age not known
+          </div>
+        </td>
+        <td class="s10"></td>
+        <td class="s11">0</td>
+        <td class="s6">0</td>
+        <td class="s6">1</td>
+        <td class="s6">1</td>
+        <td class="s2">2</td>
+        <td class="s6">0</td>
+        <td class="s6">1</td>
+        <td class="s6">1</td>
+        <td class="s6">1</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R20"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">21</div>
+        </th>
+        <td class="s7" colspan="2">(C) Pedestrian - Total</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R21"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">22</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">Less than 18 years</td>
+        <td class="s6">4</td>
+        <td class="s6">1</td>
+        <td class="s6">0</td>
+        <td class="s6">2</td>
+        <td class="s2">7</td>
+        <td class="s6">2</td>
+        <td class="s6">0</td>
+        <td class="s6">1</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R22"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">23</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">18 – 25 years</td>
+        <td class="s6">5</td>
+        <td class="s6">0</td>
+        <td class="s6">6</td>
+        <td class="s6">0</td>
+        <td class="s2">11</td>
+        <td class="s6">2</td>
+        <td class="s6">2</td>
+        <td class="s6">7</td>
+        <td class="s6">3</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R23"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">24</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">25 - 35 years</td>
+        <td class="s6">4</td>
+        <td class="s6">2</td>
+        <td class="s6">3</td>
+        <td class="s6">0</td>
+        <td class="s2">9</td>
+        <td class="s6">1</td>
+        <td class="s6">2</td>
+        <td class="s6">4</td>
+        <td class="s6">4</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R24"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">25</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">35 - 45 years</td>
+        <td class="s6">2</td>
+        <td class="s6">1</td>
+        <td class="s6">0</td>
+        <td class="s6">1</td>
+        <td class="s2">4</td>
+        <td class="s6">2</td>
+        <td class="s6">0</td>
+        <td class="s6">6</td>
+        <td class="s6">6</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R25"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">26</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">45 - 60 years</td>
+        <td class="s6">5</td>
+        <td class="s6">2</td>
+        <td class="s6">4</td>
+        <td class="s6">1</td>
+        <td class="s2">12</td>
+        <td class="s6">3</td>
+        <td class="s6">2</td>
+        <td class="s6">5</td>
+        <td class="s6">7</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R26"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">27</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">60 years and above</td>
+        <td class="s6">1</td>
+        <td class="s6">0</td>
+        <td class="s6">6</td>
+        <td class="s6">0</td>
+        <td class="s2">7</td>
+        <td class="s6">0</td>
+        <td class="s6">1</td>
+        <td class="s6">4</td>
+        <td class="s6">8</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R27"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">28</div>
+        </th>
+        <td class="s9 softmerge">
+          <div class="softmerge-inner" style="width: 198px; left: -1px">
+            Age not known
+          </div>
+        </td>
+        <td class="s10"></td>
+        <td class="s11">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s2">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R28"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">29</div>
+        </th>
+        <td class="s7" colspan="2">(D) Cyclist - Total</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R29"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">30</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">Less than 18 years</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s2">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R30"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">31</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">18 – 25 years</td>
+        <td class="s6">2</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">1</td>
+        <td class="s2">3</td>
+        <td class="s6">1</td>
+        <td class="s6">2</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R31"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">32</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">25 - 35 years</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s2">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R32"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">33</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">35 - 45 years</td>
+        <td class="s6">1</td>
+        <td class="s6">0</td>
+        <td class="s6">1</td>
+        <td class="s6">1</td>
+        <td class="s2">3</td>
+        <td class="s6">0</td>
+        <td class="s6">2</td>
+        <td class="s6">1</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R33"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">34</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">45 - 60 years</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s2">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R34"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">35</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">60 years and above</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s2">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R35"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">36</div>
+        </th>
+        <td class="s9 softmerge">
+          <div class="softmerge-inner" style="width: 198px; left: -1px">
+            Age not known
+          </div>
+        </td>
+        <td class="s10"></td>
+        <td class="s11">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s2">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R36"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">37</div>
+        </th>
+        <td class="s9 softmerge">
+          <div class="softmerge-inner" style="width: 197px; left: -1px">
+            (E) Other persons - Total
+          </div>
+        </td>
+        <td class="s12"></td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td class="s2">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R37"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">38</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">Less than 18 years</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s2">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R38"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">39</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">18 – 25 years</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s2">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R39"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">40</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">25 - 35 years</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s2">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R40"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">41</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">35 - 45 years</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s2">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R41"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">42</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">45 - 60 years</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s2">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R42"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">43</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">60 years and above</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s2">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R43"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">44</div>
+        </th>
+        <td class="s9 softmerge">
+          <div class="softmerge-inner" style="width: 198px; left: -1px">
+            Age not known
+          </div>
+        </td>
+        <td class="s10"></td>
+        <td class="s11">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s2">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td class="s6">0</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R44"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">45</div>
+        </th>
+        <td class="s13">Total</td>
+        <td class="s14"></td>
+        <td class="s2">80</td>
+        <td class="s2">28</td>
+        <td class="s2">97</td>
+        <td class="s2">20</td>
+        <td class="s2">225</td>
+        <td class="s2">63</td>
+        <td class="s2">26</td>
+        <td class="s2">102</td>
+        <td class="s2">81</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R45"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">46</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">Less than 18 years</td>
+        <td class="s2">7</td>
+        <td class="s2">1</td>
+        <td class="s2">0</td>
+        <td class="s2">4</td>
+        <td class="s2">12</td>
+        <td class="s2">3</td>
+        <td class="s2">2</td>
+        <td class="s2">4</td>
+        <td class="s2">8</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R46"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">47</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">18 – 25 years</td>
+        <td class="s2">23</td>
+        <td class="s2">4</td>
+        <td class="s2">26</td>
+        <td class="s2">3</td>
+        <td class="s2">56</td>
+        <td class="s2">22</td>
+        <td class="s2">7</td>
+        <td class="s2">25</td>
+        <td class="s2">13</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R47"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">48</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">25 - 35 years</td>
+        <td class="s2">16</td>
+        <td class="s2">9</td>
+        <td class="s2">23</td>
+        <td class="s2">3</td>
+        <td class="s2">51</td>
+        <td class="s2">11</td>
+        <td class="s2">6</td>
+        <td class="s2">28</td>
+        <td class="s2">11</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R48"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">49</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">35 - 45 years</td>
+        <td class="s2">23</td>
+        <td class="s2">8</td>
+        <td class="s2">24</td>
+        <td class="s2">7</td>
+        <td class="s2">62</td>
+        <td class="s2">19</td>
+        <td class="s2">5</td>
+        <td class="s2">19</td>
+        <td class="s2">18</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R49"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">50</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">45 - 60 years</td>
+        <td class="s2">9</td>
+        <td class="s2">6</td>
+        <td class="s2">11</td>
+        <td class="s2">2</td>
+        <td class="s2">28</td>
+        <td class="s2">7</td>
+        <td class="s2">3</td>
+        <td class="s2">18</td>
+        <td class="s2">19</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R50"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">51</div>
+        </th>
+        <td class="s7" dir="ltr" colspan="2">60 years and above</td>
+        <td class="s2">2</td>
+        <td class="s2">0</td>
+        <td class="s2">11</td>
+        <td class="s2">0</td>
+        <td class="s2">13</td>
+        <td class="s2">1</td>
+        <td class="s2">2</td>
+        <td class="s2">5</td>
+        <td class="s2">11</td>
+        <td></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="1010233704R51"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">52</div>
+        </th>
+        <td class="s9 softmerge">
+          <div class="softmerge-inner" style="width: 198px; left: -1px">
+            Age not known
+          </div>
+        </td>
+        <td class="s10"></td>
+        <td class="s15">0</td>
+        <td class="s2">0</td>
+        <td class="s2">2</td>
+        <td class="s2">1</td>
+        <td class="s2">3</td>
+        <td class="s2">0</td>
+        <td class="s2">1</td>
+        <td class="s2">1</td>
+        <td class="s2">1</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<%- include("../partials/footer_home") %>
+</div>

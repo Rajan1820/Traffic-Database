@@ -1,0 +1,60 @@
+<%- include ("../partials/header") %>
+<link rel="stylesheet" href="../../public/css/">
+<section class="compose">
+    <form action="/18" method="post">
+        <div class="label">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year">
+        </div>
+        <div class="label">
+            <label for="spot">Which Location ?</label>
+            <select name="spot" id="">
+                <option value="" disabled selected>East or West ?</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select>
+        </div>
+        <div class="label">
+            <label for="vt">Victim Type</label>
+            <select name="vt" id="driverUser">
+              <option value="" disabled selected>Choose</option>
+              <option value="1">Driver</option>
+              <option value="2">Passenger</option>
+              <option value="3">Pedestrain</option>
+              <option value="4">Cyclist</option>
+            </select>
+          </div>
+          <div class="label">
+            <label for="va">Victims's Age</label>
+            <select name="va" id="passengerAge">
+              <option value="" disabled selected>Passenger's Age</option>
+              <option value="18">Less than 18 Years</option>
+              <option value="1825">18 - 25 Years</option>
+              <option value="2535">25 - 35 Years</option>
+              <option value="3545">35 - 45 Years</option>
+              <option value="4560">45 - 60 Years</option>
+              <option value="60">60 Years or above</option>
+              <option value="unk">Age not known</option>
+            </select>
+          </div>
+          <div class="label">
+            <label for="vg">Victims's Gender</label>
+            <select name="vg" id="passengerGender">
+              <option value="" disabled selected>Passenger's Gender</option>
+              <option value="m">Male</option>
+              <option value="f">Female</option>
+            </select>
+          </div>    
+<div class="label">
+    <label for="people">Number of people involved</label>
+    <select name="people" id="people">
+        <option value="" disabled selected>Choose</option>
+        <option value="1">Killed</option>
+        <option value="2">Injured</option>
+    </select>
+</div>
+<button type="submit">+</button>
+</form>
+</section>
+<%- include("../partials/footer_1") %>
+

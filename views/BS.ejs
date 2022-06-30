@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+  <section class="compose view">
+    <form action="/BS" method="POST">
+      <div class="label">
+        <label for="spot">Show black spots for :</label>
+        <select name="spot" id="spot">
+          <option value="" disabled selected>Which location in Jodhpur?</option>
+          <option value="east">East Jodhpur</option>
+          <option value="west">West Jodhpur</option>
+        </select>
+      </div>
+        <div class="label">
+            <label for="black">Type of Highway :</label>
+            <select name="black" id="black">
+              <option value="" disabled selected>Black spots on type of road</option>
+              <option value="NH">National Highways</option>
+              <option value="SH">State Highways</option>
+              <option value="others">Other Roads</option>
+            </select>
+          </div>
+        <button type="submit" class="v-btn">View</button>
+        </form>
+</section>
+<%- include ("partials/footer_1") %>

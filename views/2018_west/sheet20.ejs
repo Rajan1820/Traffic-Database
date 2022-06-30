@@ -1,0 +1,334 @@
+<%- include("../partials/header") %>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link
+  type="text/css"
+  rel="stylesheet"
+  href="resources/sheet.css"
+/>
+<link rel="stylesheet" href="../../public/css/styles.css" />
+<style type="text/css">
+  .ritz .waffle a {
+    color: inherit;
+  }
+  .ritz .waffle .s4 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: right;
+    color: #000000;
+    font-family: "docs-calibri", Arial;
+    font-size: 14pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s2 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 14pt;
+    vertical-align: bottom;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s1 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 14pt;
+    vertical-align: bottom;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s0 {
+    border-bottom: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    font-family: "Times New Roman";
+    font-size: 14pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+  .ritz .waffle .s3 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: "docs-calibri", Arial;
+    font-size: 14pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+  }
+</style>
+<div class="table">
+<div class="ritz grid-container" dir="ltr">
+  <table class="waffle" cellspacing="0" cellpadding="0">
+    <thead>
+      <tr>
+        <th class="row-header freezebar-origin-ltr"></th>
+        <th
+          id="952705842C0"
+          style="width: 203px"
+          class="column-headers-background"
+        >
+          A
+        </th>
+        <th
+          id="952705842C1"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          B
+        </th>
+        <th
+          id="952705842C2"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          C
+        </th>
+        <th
+          id="952705842C3"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          D
+        </th>
+        <th
+          id="952705842C4"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          E
+        </th>
+        <th
+          id="952705842C5"
+          style="width: 294px"
+          class="column-headers-background"
+        >
+          F
+        </th>
+        <th
+          id="952705842C6"
+          style="width: 100px"
+          class="column-headers-background"
+        >
+          G
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="height: 20px">
+        <th
+          id="952705842R0"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">1</div>
+        </th>
+        <td class="s0" dir="ltr" colspan="7">
+          Accidents/Persons killed under the category of road useron National
+          Highways under different categories
+        </td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="952705842R1"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">2</div>
+        </th>
+        <td class="s1">Road User</td>
+        <td class="s1" colspan="2">National Highways under NHAI</td>
+        <td class="s1" colspan="2">National Highways under State PWD</td>
+        <td class="s1" colspan="2">
+          National Highways under Other Departments
+        </td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="952705842R2"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">3</div>
+        </th>
+        <td class="s1"></td>
+        <td class="s1">Accidents</td>
+        <td class="s1">Persons killed</td>
+        <td class="s1">Accidents</td>
+        <td class="s1">Persons killed</td>
+        <td class="s1">Accidents</td>
+        <td class="s1">Persons killed</td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="952705842R3"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">4</div>
+        </th>
+        <td class="s2">1. Pedestrian</td>
+        <td class="s1"><%= ped_acc_nh %></td>
+        <td class="s1"><%= ped_pep_nh %></td>
+        <td class="s1"><%= ped_acc_sh %></td>
+        <td class="s1"><%= ped_pep_sh %></td>
+        <td class="s1"><%= ped_acc_oth %></td>
+        <td class="s4"><%= ped_pep_oth %></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="952705842R4"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">5</div>
+        </th>
+        <td class="s2">2. Bicycles</td>
+        <td class="s1"><%= bcy_acc_nh %></td>
+        <td class="s1"><%= bcy_pep_nh %></td>
+        <td class="s1"><%= bcy_acc_sh %></td>
+        <td class="s1"><%= bcy_pep_sh %></td>
+        <td class="s1"><%= bcy_acc_oth %></td>
+        <td class="s4"><%= bcy_pep_oth %></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="952705842R5"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">6</div>
+        </th>
+        <td class="s2">3.Two Wheelers</td>
+        <td class="s1"><%= twoWH_acc_nh %></td>
+        <td class="s1"><%= twoWH_pep_nh %></td>
+        <td class="s1"><%= twoWH_acc_sh %></td>
+        <td class="s1"><%= twoWH_pep_sh %></td>
+        <td class="s1"><%= twoWH_acc_oth %></td>
+        <td class="s4"><%= twoWH_pep_oth %></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="952705842R6"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">7</div>
+        </th>
+        <td class="s2">4.Auto Rickshaws</td>
+        <td class="s1"><%= rick_acc_nh %></td>
+        <td class="s1"><%= rick_pep_nh %></td>
+        <td class="s1"><%= rick_acc_sh %></td>
+        <td class="s1"><%= rick_pep_sh %></td>
+        <td class="s1"><%= rick_acc_oth %></td>
+        <td class="s4"><%= rick_pep_oth %></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="952705842R7"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">8</div>
+        </th>
+        <td class="s2">5.Cars, Taxis, Vans &amp; LMV</td>
+        <td class="s1"><%= fourWH_acc_nh %></td>
+        <td class="s1"><%= fourWH_pep_nh %></td>
+        <td class="s1"><%= fourWH_acc_sh %></td>
+        <td class="s1"><%= fourWH_pep_sh %></td>
+        <td class="s1"><%= fourWH_acc_oth %></td>
+        <td class="s4"><%= fourWH_pep_oth %></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="952705842R8"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">9</div>
+        </th>
+        <td class="s2">6.Trucks/Lorries</td>
+        <td class="s1"><%= truck_acc_nh %></td>
+        <td class="s1"><%= truck_pep_nh %></td>
+        <td class="s1"><%= truck_acc_sh %></td>
+        <td class="s1"><%= truck_pep_sh %></td>
+        <td class="s1"><%= truck_acc_oth %></td>
+        <td class="s4"><%= truck_pep_oth %></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="952705842R9"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">10</div>
+        </th>
+        <td class="s2">7.Buses</td>
+        <td class="s1"><%= bus_acc_nh %></td>
+        <td class="s1"><%= bus_pep_nh %></td>
+        <td class="s1"><%= bus_acc_sh %></td>
+        <td class="s1"><%= bus_pep_sh %></td>
+        <td class="s1"><%= bus_acc_oth %></td>
+        <td class="s4"><%= bus_pep_oth %></td>
+      </tr>
+      
+      <tr style="height: 20px">
+        <th
+          id="952705842R11"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">12</div>
+        </th>
+        <td class="s2">8. Others</td>
+        <td class="s1"><%= others_acc_nh %></td>
+        <td class="s1"><%= others_pep_nh %></td>
+        <td class="s1"><%= others_acc_sh %></td>
+        <td class="s1"><%= others_pep_sh %></td>
+        <td class="s1"><%= others_acc_oth %></td>
+        <td class="s4"><%= others_pep_oth %></td>
+      </tr>
+      <tr style="height: 20px">
+        <th
+          id="952705842R12"
+          style="height: 20px"
+          class="row-headers-background"
+        >
+          <div class="row-header-wrapper" style="line-height: 20px">13</div>
+        </th>
+        <td class="s2">Total</td>
+        <td class="s1"><%= tot_acc_nh %></td>
+        <td class="s1"><%= tot_pep_nh %></td>
+        <td class="s1"><%= tot_acc_sh %></td>
+        <td class="s1"><%= tot_pep_sh %></td>
+        <td class="s1"><%= tot_acc_oth %></td>
+        <td class="s4"><%= tot_pep_oth %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
